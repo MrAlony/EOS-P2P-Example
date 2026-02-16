@@ -17,6 +17,10 @@
     #include <eos_sdk.h>
     #include <eos_auth.h>
     #include <eos_connect.h>
+#else
+    // Stub types when SDK not available
+    using EOS_ProductUserId = void*;
+    using EOS_EpicAccountId = void*;
 #endif
 
 namespace eos_testing {
