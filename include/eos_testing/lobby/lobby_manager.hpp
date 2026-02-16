@@ -24,6 +24,8 @@
     #include <eos_sdk.h>
     #include <eos_lobby.h>
 #else
+    // Stub types when SDK not available
+    using EOS_ProductUserId = void*;
     using EOS_LobbyId = const char*;
 #endif
 
