@@ -28,6 +28,12 @@ external/eos-sdk/Bin/
 # Credentials (NEVER commit real credentials!)
 config/credentials.hpp
 
+# Environment/Credentials
+.env
+.env.*
+!.env.example
+!.env.template
+
 # Logs
 *.log
 
