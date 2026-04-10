@@ -73,6 +73,12 @@ void P2PManager::accept_connections(EOS_ProductUserId peer_id) {
 #else
     auto platform = Platform::instance().get_handle();
     if (!platform) return;
+
+    if (!peer_id) {
+        std::cout << "[EOS] Ready to accept incoming peer connection requests on socket '"
+                  << m_config.socket_name << "'\n";
+        return;
+    }
     
     EOS_P2P_AcceptConnectionOptions options = {};
     options.ApiVersion = EOS_P2P_ACCEPTCONNECTION_API_LATEST;

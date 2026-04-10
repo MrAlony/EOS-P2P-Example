@@ -12,6 +12,7 @@
 #include "p2p/p2p_manager.hpp"
 #include "voice/voice_manager.hpp"
 #include "matchmaking/matchmaking_manager.hpp"
+#include "utils/eos_id.hpp"
 
 namespace eos_testing {
 
