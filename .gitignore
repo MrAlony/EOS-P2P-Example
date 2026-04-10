@@ -40,3 +40,4 @@ config/credentials.hpp
 # OS
 .DS_Store
 Thumbs.db
+.gitnexus
